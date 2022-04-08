@@ -1,0 +1,16 @@
+{
+  "extends": "stylelint-config-htmlacademy",
+  "plugins": [
+    "stylelint-order",
+    "stylelint-config-rational-order/plugin"
+  ],
+  "rules": {
+    "declaration-no-important": true,
+    "indentation": [2, {"ignore": ["inside-parens"]}],
+    "order/properties-order": [],
+    "plugin/rational-order": [true, {
+      "border-in-box-model": false,
+      "empty-line-between-groups": true
+    }]
+  }
+}
